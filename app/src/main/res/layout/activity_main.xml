@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context="com.example.danhnc.zodiac_info.MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:weightSum="3"
+        android:background="@drawable/border"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tooltipText="@string/capricorn"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:id="@+id/ivCapricorn"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/capricorn75" />
+
+            <TextView
+                android:id="@+id/tvCapricorn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivCapricorn"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:text="Ma Kết"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tooltipText="@string/aquarius"
+            android:background="@drawable/border"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:id="@+id/ivAquarius"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/aquarius75"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/tvAquarius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Bảo Bình"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:layout_below="@+id/ivAquarius"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="0dp"
+            android:tooltipText="@string/pisces"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ivPisces"
+                android:layout_marginTop="5dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/pisces75"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivPisces"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:text="Song Ngư" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:weightSum="3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@drawable/border"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        android:id="@+id/linearLayout3"
+
+        app:layout_constraintRight_toRightOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:tooltipText="@string/aries"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ivAries"
+                android:layout_marginTop="5dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/aries75"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/tvAries"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivAries"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:text="Bạch Dương"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tooltipText="@string/taurus"
+            android:background="@drawable/border"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout">
+
+            <ImageView
+                android:id="@+id/ivTaurus"
+                android:layout_marginTop="5dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/taurus75" />
+
+            <TextView
+                android:id="@+id/tvTaurus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivTaurus"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:text="Kim Ngưu" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout8"
+            android:layout_width="0dp"
+            android:tooltipText="@string/gemini"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ivGemini"
+                android:layout_marginTop="5dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/gemini50"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/tvGemini"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivGemini"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:text="Song Tử" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:weightSum="3"
+        android:background="@drawable/border"
+        android:id="@+id/linearLayout4"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+        <RelativeLayout
+            android:id="@+id/relativeLayout4"
+            android:layout_width="0dp"
+            android:tooltipText="@string/cancer"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="55dp"
+                android:src="@drawable/cancer75"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/ivCancer"/>
+
+            <TextView
+                android:id="@+id/tvCancer"
+                android:layout_below="@id/ivCancer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:text="Cự Giải" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout9"
+            android:tooltipText="@string/leo"
+            android:background="@drawable/border"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="55dp"
+                android:src="@drawable/leo75"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/ivLeo"/>
+
+            <TextView
+                android:id="@+id/tvLeo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivLeo"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:text="Sư Tử" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/relativeLayout5"
+            android:tooltipText="@string/virgo"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="55dp"
+                android:id="@+id/ivVirgo"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/virgo50"/>
+            <TextView
+                android:id="@+id/tvVirgo"
+                android:layout_below="@id/ivVirgo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:text="Xử nữ" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@drawable/border"
+        android:weightSum="3"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout10"
+            android:tooltipText="@string/libra"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="55dp"
+                android:id="@+id/ivLibra"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/libra75"/>
+            <TextView
+                android:id="@+id/tvLibra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/ivLibra"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:text="Thiên Bình"
+                app:layout_constraintLeft_toLeftOf="parent"
+          />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:tooltipText="@string/scorpio"
+            android:background="@drawable/border"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout5">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:id="@+id/ivScorpio"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/scorpio50"/>
+            <TextView
+                android:id="@+id/tvScorpio"
+                android:layout_below="@id/ivScorpio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Thần Nông"
+                android:layout_centerHorizontal="true"
+                app:layout_constraintRight_toRightOf="parent" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:tooltipText="@string/sagittarius"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout10"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="55dp"
+                android:id="@+id/ivSagittarius"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/sagittarius50"/>
+            <TextView
+                android:id="@+id/tvSagittarius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/ivSagittarius"
+                android:text="Nhân Mã"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="14dp"
+        android:orientation="vertical"
+        android:weightSum="2"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
